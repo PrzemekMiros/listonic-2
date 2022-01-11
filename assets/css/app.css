@@ -1,0 +1,156 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-accent-1: #1C83F0;
+  --color-gradient: linear-gradient(180deg, #036CE4 0%, #379CFD 100%);
+  --color-heading: #292929;
+  --color-paragraph: #4E4E4E;
+}
+
+/* Headings
+---------------------------------- */
+
+h1, h2, h3 ,h4 ,h5,h6 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+h1 {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+}
+h2 {
+    font-size: 44px;
+    line-height: 55px;
+}
+.subheader {
+    font-size: 24px;
+}
+
+/* Colors and bg
+---------------------------------- */
+
+.color-white {
+    color: var(--color-white);
+}
+.color-black-1 {
+    color: var(--color-heading);
+}
+.color-black-2 {
+    color: var(--color-heading);
+}
+
+/* Paddings
+---------------------------------- */
+
+.pt-xsmall {
+    padding-top: 20px;
+}
+.pt-small {
+    padding-top: 40px;
+}
+.pt-medium {
+    padding-top: 60px;
+}
+.pt-large {
+    padding-top: 80px;
+}
+.pb-xsmall {
+    padding-bottom: 20px;
+}
+.pb-small {
+    padding-bottom: 40px;
+}
+.pb-medium {
+    padding-bottom: 60px;
+}
+.pb-large {
+    padding-bottom: 80px;
+}
+
+/* Button
+---------------------------------- */
+
+.btn {
+    padding: 12px 34px;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 0px 6px 33px rgba(0, 0, 0, 0.12);
+    border-radius: 31px;
+}
+.btn:active {
+    border: none!important;
+}
+.btn-white {
+    background: #fff;
+    color: #292929;
+
+}
+.btn-blue {
+    background: linear-gradient(45deg, #026AE3 4.84%, #22A1FF 104.93%);
+    color: var(--color-white);
+}
+
+.btn-blue:hover {
+    color: #fff;
+}
+
+/* List
+---------------------------------- */
+
+/* Main
+---------------------------------- */
+
+main {
+    position: relative;
+}
+main::before {
+    position: absolute;
+    content: "";
+    top: 822px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-gradient);
+    border-radius: 56px 56px 0px 0px;
+    z-index: -1;
+}
+/* Includes
+---------------------------------- */
+
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+/* Steps
+---------------------------------- */
+
+.steps__number {
+    padding: 15px 28px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    background: #fff;
+    color: var(--color-accent-1);
+    border-radius: 36px;
+}
+
+/* Banner
+---------------------------------- */
+
+.banner__wrap {
+    padding: 50px 50px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+/* More
+---------------------------------- */
+
+/* Getthis
+---------------------------------- */
+
+/* Footer
+---------------------------------- */
