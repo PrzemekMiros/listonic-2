@@ -27,7 +27,7 @@
                 <p class="subheader pt-xsmall pb-xsmall color-black-2">
                     Start eating healthier with this complete healthy grocery list.
                 </p>
-                <a href="#" class="btn btn-blue">
+                <a href="#" class="btn btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#modal">
                     Preview Template
                 </a>
             </div>
@@ -79,7 +79,7 @@
                 </div>
               </div>
             <div class="text-center">
-                <a href="#" class="btn btn-white">
+                <a href="#" class="btn btn-white" type="button" data-bs-toggle="modal" data-bs-target="#modal">
                     Preview Template
                 </a>
             </div>
@@ -133,7 +133,7 @@
                     </h2>
                 </div>
                 <div class="col-md-6">
-                    <a href="#" class="btn btn-blue">
+                    <a href="#" class="btn btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#modal">
                         Send template to phone
                     </a>
                 </div>
@@ -141,9 +141,9 @@
         </div>
     </section>
 
-    <section class="more color-white">
+    <section class="more color-white pb-medium">
         <div class="container">
-            <h2>
+            <h2 class="pt-medium pb-small">
                 Want to know more?
             </h2>
             <div class="more__wrap">
@@ -184,9 +184,9 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
     </section>
 
     <section class="getthis pb-large">
-        <div class="container-xl getthis__wrap">
+        <div class="container-xl getthis__wrap pt-large pb-large">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                     <img src="assets/img/phone-app.svg" alt="">
                 </div>
                 <div class="col-md-6 text-center d-flex align-items-center">
@@ -198,7 +198,7 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
                             Open this template in the Listonic app to 
     add, remove and edit items. Free, forever.
                         </p>
-                        <a href="#" class="btn btn-blue">
+                        <a href="#" class="btn btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#modal">
                             Preview template
                         </a>
                     </div>
@@ -221,6 +221,23 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
         </span>
     </div>
 </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Modal </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
