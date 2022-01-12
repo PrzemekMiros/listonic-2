@@ -6,6 +6,9 @@
   --color-heading: #292929;
   --color-paragraph: #4E4E4E;
 }
+body {
+    overflow-x: hidden;
+}
 
 /* Headings
 ---------------------------------- */
@@ -99,8 +102,18 @@ h3 {
     color: #fff;
 }
 
-/* List
+/* Position
 ---------------------------------- */
+
+.p-relative {
+    position: relative;
+    z-index: 1;
+}
+@media(min-width:768px) {
+    .text-end-d {
+        text-align: end;
+    }
+}
 
 /* Main
 ---------------------------------- */
@@ -159,6 +172,45 @@ main::before {
     background: #fff;
     border-radius: 30px;
 }
+.getthis__phone__bg {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    background: url("../img/borders.svg");
+    background-size: cover;
+}
 
-/* Footer
+/* Modal
 ---------------------------------- */
+
+.modal-dialog {
+    max-width: 50%;
+}
+.list-scrollable {
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* Qr Code
+---------------------------------- */
+
+.qrcode {
+    position: fixed;
+    top: calc(100vh - 400px);
+    right: 5%;
+    background: var(--color-accent-1);
+    padding: 10px 10px 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    color: #fff;
+    z-index: 99;
+}
+.qrcode img {
+    margin-bottom: 15px;
+    width: 151px;
+    height: 152px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
