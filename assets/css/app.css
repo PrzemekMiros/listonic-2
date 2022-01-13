@@ -23,19 +23,30 @@ h1, h2, h3 ,h4 ,h5,h6 {
     color: #fff;
 }
 h1 {
-    font-size: 54px;
+    font-size: 44px;
     line-height: 80px;
     letter-spacing: 0.02em;
 }
 h2 {
-    font-size: 44px;
-    line-height: 55px;
+    font-size: 28px;
 }
 h3 {
-    font-size: 38px;
+    font-size: 22px;
 }
 .subheader {
-    font-size: 21px;
+    font-size: 19px;
+}
+
+@media(min-width:768px) {
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    h3 {
+        font-size: 38px;
+    }
 }
 
 /* Colors and bg
@@ -113,6 +124,19 @@ h3 {
     position: relative;
     z-index: 1;
 }
+
+/* Responsive
+---------------------------------- */
+
+@media(max-width:768px) {
+    .mob-none {
+        display: none;
+    }
+    .text-center-m {
+        text-align: center;
+    }
+}
+
 @media(min-width:768px) {
     .text-end-d {
         text-align: end;
@@ -128,14 +152,32 @@ main {
 main::before {
     position: absolute;
     content: "";
-    top: 822px;
-    bottom: 0;
+    top: 1052px;
+    bottom: 560px;
     left: 0;
     right: 0;
     background: var(--color-gradient);
     border-radius: 56px 56px 0px 0px;
     z-index: -1;
 }
+
+@media(min-width:768px) {
+    main::before {
+        top: 822px;
+        bottom: 0;
+    }
+}
+
+/* List
+---------------------------------- */
+
+@media(min-width:768px) {
+    .list__wrap {
+        max-width: 38%;
+    }
+}
+
+
 /* Includes
 ---------------------------------- */
 
@@ -145,6 +187,9 @@ main::before {
 .accordion-button {
     font-size: 24px;
     font-weight: 700;
+}
+.accordion-button svg {
+    margin-right: 20px;
 }
 .accordion-button:not(.collapsed) {
     background-color: var(--color-gray);
@@ -175,6 +220,12 @@ main::before {
     border-radius: 30px;
 }
 
+@media(max-width:768px) {
+    .banner__wrap {
+        text-align: center;
+    }
+}
+
 /* More
 ---------------------------------- */
 
@@ -182,7 +233,6 @@ main::before {
 ---------------------------------- */
 
 .getthis__wrap {
-    background: #fff;
     border-radius: 30px;
 }
 .getthis__phone__bg {
@@ -193,6 +243,12 @@ main::before {
     right: 40px;
     background: url("../img/borders.svg");
     background-size: cover;
+}
+
+@media(min-width:768px) {
+    .getthis__wrap {
+        background: #fff;
+    }
 }
 
 /* Modal
