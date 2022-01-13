@@ -1,6 +1,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-gray: #f0f0f0;
   --color-accent-1: #1C83F0;
   --color-gradient: linear-gradient(180deg, #036CE4 0%, #379CFD 100%);
   --color-heading: #292929;
@@ -22,7 +23,7 @@ h1, h2, h3 ,h4 ,h5,h6 {
     color: #fff;
 }
 h1 {
-    font-size: 64px;
+    font-size: 54px;
     line-height: 80px;
     letter-spacing: 0.02em;
 }
@@ -34,7 +35,7 @@ h3 {
     font-size: 38px;
 }
 .subheader {
-    font-size: 24px;
+    font-size: 21px;
 }
 
 /* Colors and bg
@@ -141,11 +142,20 @@ main::before {
 .accordion-item {
     margin-bottom: 20px;
 }
+.accordion-button {
+    font-size: 24px;
+    font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-gray);
+    color: var(--color-black);
+}
 
 /* Steps
 ---------------------------------- */
 
 .steps__number {
+    display: inline-block;
     padding: 15px 28px;
     font-size: 24px;
     font-weight: 700;
@@ -193,7 +203,25 @@ main::before {
 }
 .list-scrollable {
     height: 300px;
+    padding-left: 40px;
     overflow-y: auto;
+}
+.list-scrollable li {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    list-style: none;
+}
+.list-scrollable li::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -35px;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgba(33, 130, 245, 0.6);
+    border-radius: 50%;
 }
 
 /* Qr Code
