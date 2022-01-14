@@ -138,6 +138,9 @@ h3 {
 }
 
 @media(min-width:768px) {
+    .container-xl {
+        max-width: 1560px;
+    }
     .text-end-d {
         text-align: end;
     }
@@ -163,7 +166,7 @@ main::before {
 
 @media(min-width:768px) {
     main::before {
-        top: 822px;
+        top: 700px;
         bottom: 0;
     }
 }
@@ -194,6 +197,27 @@ main::before {
 .accordion-button:not(.collapsed) {
     background-color: var(--color-gray);
     color: var(--color-black);
+}
+.accordion-body {
+    line-height: 3.7;
+}
+.list-borders span {
+    position: relative;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+.list-borders span::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--color-gray);
+    border-radius: 50%;
+}
+.list-no-borders span {
+    margin-right: 40px;
 }
 
 /* Steps
@@ -235,14 +259,15 @@ main::before {
 .getthis__wrap {
     border-radius: 30px;
 }
+.getthis__wrap img {
+    width: 350px;
+}
 .getthis__phone__bg {
     position: absolute;
-    top: 40px;
-    bottom: 40px;
-    left: 40px;
-    right: 40px;
-    background: url("../img/borders.svg");
-    background-size: cover;
+    top: -65px;
+    bottom: -65px;
+    left: -65px;
+    right: -65px;
 }
 
 @media(min-width:768px) {
