@@ -695,11 +695,11 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
 
   <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="Open in App" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
       <div class="modal-content">
         <div class="modal-body">
             <div class="row">
-                <div class="col-md-5 p-relative">
+                <div class="col-md-5">
                     <button type="button" class="btn-close desk-none" data-bs-dismiss="modal" aria-label="Close"></button>
                     <ul class="list-scrollable">
                         <li>
@@ -833,8 +833,8 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
                             </svg>
                         </li>
                     </ul>
-                    <div class="mobile-pop-btn-wrap">
-                        <a href="#" class="btn btn-blue desk-none" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">
+                    <div class="mobile-pop-btn-wrap container p-relative">
+                        <a href="#" class="btn btn-blue desk-none w-100" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">
                             Edit This List on Your Phone
                         </a>
                     </div>
@@ -925,7 +925,7 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
 
       setTimeout(function() {
         lazyImages.forEach(function(lazyImage) {
-          if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 100) && getComputedStyle(lazyImage).display !== "none") {
+          if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 400) && getComputedStyle(lazyImage).display !== "none") {
             lazyImage.src = lazyImage.dataset.src;
             lazyImage.srcset = lazyImage.dataset.srcset;
             lazyImage.classList.remove("lazy");

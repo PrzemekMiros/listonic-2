@@ -127,6 +127,9 @@ h3, .h3 {
     position: relative;
     z-index: 1;
 }
+.w-100 {
+    position: relative;
+}
 
 /* Logo
 ---------------------------------- */
@@ -137,6 +140,10 @@ h3, .h3 {
 
 /* Responsive
 ---------------------------------- */
+
+.container {
+    max-width: 1140px;
+}
 
 @media(max-width:768px) {
     .text-center-m {
@@ -169,6 +176,11 @@ h3, .h3 {
     }
 }
 @media(min-width:1400px) {
+    .container-xl {
+        max-width: 1560px;
+    }
+}
+@media(min-width:1600px) {
     .container-xl {
         max-width: 1560px;
     }
@@ -322,29 +334,32 @@ main::before {
 /* Modal
 ---------------------------------- */
 
-.modal-dialog-scrollable .modal-body {
-    overflow-y: hidden;
-  }
+.modal {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 .modal-body {
-    padding: 4rem;
+    padding: 0;
 }
 .modal-body li {
     font-size: 17px;
 }
+.modal-dialog {
+    margin: 0;
+  }
+.modal-dialog-scrollable {
+    height: 100%
+  }
 .modal-content {
     min-height: 100vh;
     max-height: 550px;
-    border-radius: 25px;
+    overflow: visible;
 }
 .modal-content p {
     color: #656565;
 }
 .list-scrollable {
-    height: 64%;
     padding-left: 40px;
-    overflow-y: auto;
-    box-shadow: 0 0 45px #0001;
-    border-radius: 5px;
 }
 .list-scrollable li {
     position: relative;
@@ -391,14 +406,39 @@ main::before {
       display: inline-block;
       margin-bottom: 10px;
   }
+  @media(min-width:576px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+  }
 
   @media(min-width:768px) {
+    .modal {
+        overflow-y: auto;
+    }
     .modal-dialog {
         max-width: 68%;
     }
+    .modal-dialog-scrollable {
+        height: calc(100% - 1rem);
+      }
+    .modal-body {
+        padding: 4rem;
+        overflow-y: hidden!important
+    }
     .modal-content {
+        height: 550px;
         max-height: 550px;
         min-height: 550px;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+    .list-scrollable {
+        height: 64%;
+        overflow-y: auto;
+        box-shadow: 0 0 45px #0001;
+        border-radius: 5px;
     }
   }
 
@@ -406,9 +446,9 @@ main::before {
 ------------------------------------------- */
 
   .mobile-pop-btn-wrap {
-      position: absolute;
-      bottom: 0;
-      left: o;
+      position: fixed;
+      bottom: 30px;
+      left: 0;
       width: 100%;
   }
 
