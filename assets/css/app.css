@@ -95,11 +95,11 @@ h3 {
 ---------------------------------- */
 
 .btn {
-    padding: 12px 34px;
+    padding: 11px 65px 13px;
     font-size: 24px;
     font-weight: 700;
     box-shadow: 0px 6px 33px rgba(0, 0, 0, 0.12);
-    border-radius: 31px;
+    border-radius: 30px;
 }
 .btn:active {
     border: none!important;
@@ -126,6 +126,13 @@ h3 {
     z-index: 1;
 }
 
+/* Logo
+---------------------------------- */
+
+.logo__wrap img {
+    width: 75px;
+}
+
 /* Responsive
 ---------------------------------- */
 
@@ -140,13 +147,23 @@ h3 {
 
 @media(min-width:768px) {
     .container-xl {
-        max-width: 1560px;
+        max-width: 1260px;
     }
     .text-end-d {
         text-align: end;
     }
     .desk-none {
         display: none;
+    }
+    .w-60-d {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width:1400px) {
+    .container-xl {
+        max-width: 1560px;
     }
 }
 
@@ -253,6 +270,11 @@ main::before {
     padding: 50px 50px;
     background: #fff;
     border-radius: 30px;
+    text-transform: uppercase;
+}
+.banner h2 {
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
 @media(max-width:768px) {
@@ -263,6 +285,10 @@ main::before {
 
 /* More
 ---------------------------------- */
+
+.more__wrap ol {
+    padding-left: 22px;
+}
 
 /* Getthis
 ---------------------------------- */
@@ -293,11 +319,17 @@ main::before {
 .modal-dialog {
     max-width: 68%;
 }
+.modal-dialog-scrollable .modal-body {
+    overflow-y: hidden;
+  }
 .modal-body {
     padding: 4rem;
 }
 .modal-body li {
     font-size: 17px;
+}
+.modal-content {
+    border-radius: 25px;
 }
 .list-scrollable {
     height: 64%;
@@ -353,4 +385,12 @@ main::before {
     height: 152px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
+}
+
+/* Site footer
+--------------------------------------- */
+
+.site-footer a,
+.site-footer span {
+    color: #9A9A9A;
 }
