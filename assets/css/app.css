@@ -23,15 +23,15 @@ h1, h2, h3 ,h4 ,h5,h6 {
     font-weight: 700;
     color: #fff;
 }
-h1 {
+h1, .h1 {
     font-size: 2em;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-h2 {
+h2, .h2 {
     font-size: 1.5em;
 }
-h3 {
+h3, .h3 {
     font-size: 1.25em;
 }
 .subheader {
@@ -131,8 +131,8 @@ h3 {
 /* Logo
 ---------------------------------- */
 
-.logo__wrap img {
-    width: 75px;
+.logo-wrap img {
+    width: 110px;
 }
 
 /* Responsive
@@ -322,9 +322,6 @@ main::before {
 /* Modal
 ---------------------------------- */
 
-.modal-dialog {
-    max-width: 68%;
-}
 .modal-dialog-scrollable .modal-body {
     overflow-y: hidden;
   }
@@ -335,12 +332,19 @@ main::before {
     font-size: 17px;
 }
 .modal-content {
+    min-height: 100vh;
+    max-height: 550px;
     border-radius: 25px;
+}
+.modal-content p {
+    color: #656565;
 }
 .list-scrollable {
     height: 64%;
     padding-left: 40px;
     overflow-y: auto;
+    box-shadow: 0 0 45px #0001;
+    border-radius: 5px;
 }
 .list-scrollable li {
     position: relative;
@@ -381,6 +385,33 @@ main::before {
     border: 1px solid #1112;
     border-radius: 37px;
   }
+
+
+  .btn-app-wrap a {
+      display: inline-block;
+      margin-bottom: 10px;
+  }
+
+  @media(min-width:768px) {
+    .modal-dialog {
+        max-width: 68%;
+    }
+    .modal-content {
+        max-height: 550px;
+        min-height: 550px;
+    }
+  }
+
+/* Mobile popup 
+------------------------------------------- */
+
+  .mobile-pop-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: o;
+      width: 100%;
+  }
+
 
 /* Qr Code
 ---------------------------------- */

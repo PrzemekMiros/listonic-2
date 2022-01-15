@@ -699,7 +699,8 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
       <div class="modal-content">
         <div class="modal-body">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 p-relative">
+                    <button type="button" class="btn-close desk-none" data-bs-dismiss="modal" aria-label="Close"></button>
                     <ul class="list-scrollable">
                         <li>
                             <span>
@@ -832,9 +833,11 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
                             </svg>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-blue desk-none" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">
-                        Edit This List on Your Phone
-                    </a>
+                    <div class="mobile-pop-btn-wrap">
+                        <a href="#" class="btn btn-blue desk-none" type="button" data-bs-toggle="modal" data-bs-target="#modal-2">
+                            Edit This List on Your Phone
+                        </a>
+                    </div>
                 </div>
                 <div class="col-md-7 mob-none">
                     <div class="d-flex align-items-center justify-content-between">
@@ -850,7 +853,7 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
                         <p class="pb-xsmall">
                             View the entire list, add, remove and edit all items.
                         </p>
-                        <div class="row">
+                        <div class="row btn-app-wrap">
                             <div class="col-md-6">
                                 <a href="#">
                                     <img src="./assets/img/buttons/ios.svg" class="img-fluid" alt="App Store">
@@ -878,23 +881,22 @@ Just make sure you’re making enough adjustments elsewhere on your healthy groc
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <ul>
-                            <li>0</li>
-                            <li>0</li>
-                            <li>0</li>
-                            <li>0</li>
-                            <li>0</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <a href="#" class="btn btn-blue desk-none" type="button" data-bs-toggle="modal" data-bs-target="#modal">
-                            Back
-                        </a>
-                    </div>
-                </div>
+                <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#modal"></button>  
+                <h2 class="h1 pt-small pb-small color-black-1 text-center">
+                    Edit This List <br />
+                    in our free app
+                </h2>
+                <ul>
+                    <li>
+                        <span>Add, remove & edit items</span>
+                    </li>
+                    <li>
+                        <span>Sort items into store aisles</span>
+                    </li>
+                    <li>
+                        <span>Keep track of spending</span>
+                    </li>
+                </ul> 
             </div>
           </div>
         </div>
