@@ -541,6 +541,9 @@ main::before {
       left: 0;
       width: 100%;
   }
+  .mobile-pop-btn-wrap span {
+      padding-left: 12px;
+  }
   .btn-back {
     margin: 30px;
     border: none;
