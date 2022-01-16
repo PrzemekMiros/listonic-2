@@ -173,7 +173,7 @@ h3, .h3 {
         text-align: end;
     }
     .desk-none {
-        display: none;
+        display: none!important;
     }
     .w-6-d {
         width: 60%;
