@@ -152,6 +152,8 @@ h3, .h3 {
 
 .container {
     max-width: 1140px;
+    padding-right: var(--bs-gutter-x,2.2rem);
+    padding-left: var(--bs-gutter-x,2.2rem);
 }
 
 @media(max-width:768px) {
@@ -183,6 +185,9 @@ h3, .h3 {
         margin-left: auto;
         margin-right: auto;
     }
+    .d-flex-d {
+        display: flex;
+    }
 }
 @media(min-width:1400px) {
     .container-xl {
@@ -204,7 +209,7 @@ main {
 main::before {
     position: absolute;
     content: "";
-    top: calc(335px + 150vw);
+    top: calc(255px + 150vw);
     bottom: 515px;
     left: 0;
     right: 0;
@@ -269,6 +274,14 @@ main::before {
     font-weight: 500;
     line-height: 3.7;
 }
+.accordion-body svg {
+    width: 15px;
+    height: 15px;
+}
+#collapseThree .accordion-body svg {
+    width: 24px;
+    height: 24px;
+}
 .list-borders span {
     position: relative;
     display: inline-block;
@@ -291,9 +304,17 @@ main::before {
        width: 35px;
        height: 35px;
     }
+    #collapseThree .accordion-body svg {
+        width: 35px;
+        height: 35px;
+    }
     .accordion-body {
         padding: 2rem;
         font-size: 17px;
+    }
+    .accordion-body svg {
+        width: 22px;
+        height: 22px;
     }
     .list-borders span {
         position: relative;
@@ -330,7 +351,10 @@ main::before {
 
 .banner__wrap {
     padding: 50px;
-    background: #fff;
+    background-color: #fff;
+    background-image: url("../img/svg/banner-bg.svg");
+    background-size: cover;
+    background-position: center;
     border-radius: 30px;
     text-transform: uppercase;
 }
@@ -360,7 +384,7 @@ main::before {
     border-radius: 30px;
 }
 .getthis__wrap img {
-    width: 350px;
+    width: 60%;
 }
 .getthis__phone__bg {
     position: absolute;
@@ -373,6 +397,11 @@ main::before {
 @media(min-width:768px) {
     .getthis__wrap {
         background: #fff;
+    }
+    .getthis__phone__bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -407,7 +436,7 @@ main::before {
     color: #656565;
 }
 #modal .list-scrollable li span {
-    font-size: .8em;
+    font-size: 1em;
    }
 .list-scrollable {
     padding-left: 40px;
@@ -490,8 +519,11 @@ main::before {
         box-shadow: 0 0 45px #0001;
         border-radius: 5px;
     }
+    #modal .list-scrollable li span {
+        font-size: .8em;
+       }
   }
-  @media(min-width:1024px) {
+  @media(min-width:1200px) {
     .modal-content h2 {
         font-size: 2.5em;
     }
