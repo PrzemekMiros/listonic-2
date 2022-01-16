@@ -14,13 +14,17 @@ body {
 a {
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 
 /* Headings
 ---------------------------------- */
 
-h1, h2, h3 ,h4 ,h5,h6 {
+h1, h2, h3 ,h4 , h5, h6 
+.h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Quicksand", sans-serif;
-    font-weight: 700;
+    font-weight: 700!important;
     color: #fff;
 }
 h1, .h1 {
@@ -196,7 +200,7 @@ main::before {
     position: absolute;
     content: "";
     top: 1052px;
-    bottom: 560px;
+    bottom: 515px;
     left: 0;
     right: 0;
     background: var(--color-gradient);
@@ -285,7 +289,7 @@ main::before {
 ---------------------------------- */
 
 .banner__wrap {
-    padding: 50px 50px;
+    padding: 50px;
     background: #fff;
     border-radius: 30px;
     text-transform: uppercase;
@@ -297,6 +301,7 @@ main::before {
 
 @media(max-width:768px) {
     .banner__wrap {
+        padding: 25px;
         text-align: center;
     }
 }
@@ -339,7 +344,7 @@ main::before {
     overflow-y: visible;
 }
 .modal-body {
-    padding: 0;
+    padding: 5%;
 }
 .modal-body li {
     font-size: 17px;
@@ -401,7 +406,6 @@ main::before {
     border-radius: 37px;
   }
 
-
   .btn-app-wrap a {
       display: inline-block;
       margin-bottom: 10px;
@@ -451,8 +455,27 @@ main::before {
       left: 0;
       width: 100%;
   }
-
-
+  .btn-back {
+    margin: 30px;
+    border: none;
+    background: transparent;
+  }
+  #modal-2 img {
+      padding-left: 20px;
+  }
+  .list-center {
+      width: 300px;
+  }
+  .list-center li {
+    padding-bottom: 30px;
+  }
+  .list-center li svg {
+    padding: 7px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #1112;
+    border-radius: 5px;
+  }
 /* Qr Code
 ---------------------------------- */
 
