@@ -14,7 +14,7 @@ body {
 a {
     text-decoration: none;
 }
-li {
+ul li {
     list-style: none;
 }
 
@@ -24,11 +24,12 @@ li {
 h1, h2, h3 ,h4 , h5, h6 
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Quicksand", sans-serif;
-    font-weight: 700!important;
+    font-weight: 700;
     color: #fff;
 }
 h1, .h1 {
     font-size: 2em;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
@@ -203,7 +204,7 @@ main {
 main::before {
     position: absolute;
     content: "";
-    top: 1052px;
+    top: calc(335px + 150vw);
     bottom: 515px;
     left: 0;
     right: 0;
@@ -213,6 +214,12 @@ main::before {
 }
 
 @media(min-width:768px) {
+    main::before {
+        top: 600px;
+        bottom: 0;
+    }
+}
+@media(min-width:1024px) {
     main::before {
         top: 700px;
         bottom: 0;
@@ -242,13 +249,15 @@ main::before {
     border-radius: 10px!important;
 }
 .accordion-button {
-    padding: 2rem;
-    font-size: 24px;
+    padding: 1.5rem;
+    font-size: 17px;
     font-weight: 700;
     border-radius: 10px!important;
 }
 .accordion-button svg {
     margin-right: 20px;
+    width: 23px;
+    height: 23px;
 }
 .accordion-button:not(.collapsed) {
     background-color: var(--color-gray);
@@ -256,7 +265,7 @@ main::before {
 }
 .accordion-body {
     padding: 1em 2em;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 3.7;
 }
@@ -274,6 +283,18 @@ main::before {
     transform: translateY(2px);
 }
 @media(min-width:768px) {
+    .accordion-button {
+        padding: 2rem;
+        font-size: 24px;
+    }
+    .accordion-button svg {
+       width: 35px;
+       height: 35px;
+    }
+    .accordion-body {
+        padding: 2rem;
+        font-size: 17px;
+    }
     .list-borders span {
         position: relative;
         padding-right: 30px;
@@ -379,9 +400,15 @@ main::before {
     max-height: 550px;
     overflow: visible;
 }
+.modal-content h2 {
+    font-size: 2em;
+}
 .modal-content p {
     color: #656565;
 }
+#modal .list-scrollable li span {
+    font-size: .8em;
+   }
 .list-scrollable {
     padding-left: 40px;
 }
@@ -464,6 +491,14 @@ main::before {
         border-radius: 5px;
     }
   }
+  @media(min-width:1024px) {
+    .modal-content h2 {
+        font-size: 2.5em;
+    }
+    #modal .list-scrollable li span {
+       font-size: 1em;
+      }
+  }
 
 /* Mobile popup 
 ------------------------------------------- */
@@ -479,11 +514,12 @@ main::before {
     border: none;
     background: transparent;
   }
-  #modal-2 img {
+  #modal-2 .img-p {
       padding-left: 20px;
   }
   .list-center {
-      width: 320px;
+    width: 270px;
+    padding-left: 0;
   }
   .list-center li {
     padding-bottom: 30px;
@@ -527,7 +563,24 @@ main::before {
 /* Site footer
 --------------------------------------- */
 
+.site-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--color-gray);
+}
 .site-footer a,
 .site-footer span {
+    font-size: .8em;
     color: #9A9A9A;
+}
+@media(min-width:768px) {
+    .site-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #fff;
+    }
+    .site-footer a,
+    .site-footer span {
+   font-size: 1em;
+}
 }
