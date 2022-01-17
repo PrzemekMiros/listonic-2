@@ -104,6 +104,7 @@ h3, .h3 {
     padding: 11px 65px 13px;
     font-size: 1em;
     font-weight: 700;
+    line-height: 1.5;
     letter-spacing: 0.08em;
     box-shadow: 0px 6px 33px rgba(0, 0, 0, 0.12);
     border-radius: 30px;
@@ -136,6 +137,9 @@ h3, .h3 {
     position: relative;
     z-index: 1;
 }
+.inline-block {
+    display: inline-block;
+}
 .w-100 {
     position: relative;
 }
@@ -166,9 +170,6 @@ h3, .h3 {
 }
 
 @media(min-width:768px) {
-    .container-xl {
-        max-width: 1260px;
-    }
     .text-end-d {
         text-align: end;
     }
@@ -189,14 +190,9 @@ h3, .h3 {
         display: flex;
     }
 }
-@media(min-width:1400px) {
-    .container-xl {
-        max-width: 1560px;
-    }
-}
 @media(min-width:1600px) {
     .container-xl {
-        max-width: 1560px;
+        max-width: 1460px;
     }
 }
 
@@ -297,8 +293,8 @@ main::before {
 }
 @media(min-width:768px) {
     .accordion-button {
-        padding: 2rem;
-        font-size: 24px;
+        padding: 1.5rem;
+        font-size: 21px;
     }
     .accordion-button svg {
        width: 35px;
@@ -335,6 +331,9 @@ main::before {
 /* Steps
 ---------------------------------- */
 
+.steps__wrap h3 {
+    margin-bottom: 10px;
+}
 .steps__number {
     display: inline-block;
     padding: .6em 1.5em;
@@ -439,7 +438,7 @@ main::before {
     font-size: 1em;
    }
 .list-scrollable {
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .list-scrollable li {
     position: relative;
@@ -497,7 +496,9 @@ main::before {
         overflow-y: auto;
     }
     .modal-dialog {
-        max-width: 68%;
+        max-width: 880px;
+        min-width: 690px;
+        width: 68%;
     }
     .modal-dialog-scrollable {
         height: calc(100% - 1rem);
@@ -522,6 +523,12 @@ main::before {
     #modal .list-scrollable li span {
         font-size: .8em;
        }
+       .pop-padd-left {
+        padding-left: 20px;
+    }
+    .pop-padd-right {
+        padding-right: 20px;
+    }
   }
   @media(min-width:1200px) {
     .modal-content h2 {
@@ -551,6 +558,7 @@ main::before {
   }
   #modal-2 .img-p {
       padding-left: 20px;
+      margin-top: -60px;
   }
   .list-center {
     width: 270px;
@@ -562,6 +570,7 @@ main::before {
   }
   .list-center li span {
       padding-left: 15px;
+      font-size: .9em;
   }
   .list-center li svg {
     padding: 7px;
@@ -575,8 +584,8 @@ main::before {
 
 .qrcode {
     position: fixed;
-    top: calc(100vh - 400px);
-    right: 5%;
+    top: calc(100vh - 345px);
+    right: 70px;
     width: 150px;
     height: auto;
     background: var(--color-accent-1);
