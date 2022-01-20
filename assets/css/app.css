@@ -101,8 +101,8 @@ h3, .h3 {
 
 .btn {
     display: inline-block;
-    padding: 11px 65px 13px;
-    font-size: 1em;
+    padding: 11px 35px 13px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.08em;
@@ -118,7 +118,8 @@ h3, .h3 {
 
 }
 .btn-blue {
-    background: linear-gradient(45deg, #026AE3 4.84%, #22A1FF 104.93%);
+    background: rgb(2,106,227);
+    background: linear-gradient(45deg, rgba(2,106,227,1) 0%, rgba(34,161,255,1) 100%); 
     color: var(--color-white);
 }
 
@@ -129,6 +130,11 @@ h3, .h3 {
     padding: 21px 25px 23px;
     border-radius: 15px;
     letter-spacing: 0;
+}
+@media(min-width:768px) {
+    .btn {
+        padding: 11px 65px 13px;
+    }
 }
 /* Position
 ---------------------------------- */
@@ -372,8 +378,22 @@ main::before {
 /* More
 ---------------------------------- */
 
+.more h2 {
+    padding: 20px 0;
+}
+.more h3 {
+    padding-bottom: 20px;
+}
 .more__wrap ol {
     padding-left: 22px;
+}
+@media(min-width:768px) {
+    .more h2 {
+        padding: 40px 0;
+    }
+    .more h3 {
+        padding-bottom: 40px;
+    }
 }
 
 /* Getthis
