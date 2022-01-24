@@ -118,8 +118,18 @@ h3, .h3 {
 
 }
 .btn-blue {
-    background: rgb(2,106,227);
-    background: linear-gradient(45deg, rgba(2,106,227,1) 0%, rgba(34,161,255,1) 100%); 
+  /* ff 3.6+ */
+    background:-moz-linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%); 
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%);
+    /* opera 11.10+ */
+    background:-o-linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%);
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F9CFD', endColorstr='#0975E8', GradientType=1 );
+    /* ie 10+ */
+    background:-ms-linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%);
+    /* global 94%+ browsers support */
+    background:linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%);
     color: var(--color-white);
 }
 
