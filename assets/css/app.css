@@ -117,6 +117,7 @@ h3, .h3 {
 
 }
 .btn-blue {
+    background: rgba(9, 117, 232, 1);
   /* ff 3.6+ */
     background:-moz-linear-gradient(45deg, rgba(9, 117, 232, 1) 0%, rgba(31, 156, 253, 1) 100%); 
     /* safari 5.1+,chrome 10+ */
